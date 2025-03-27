@@ -312,6 +312,7 @@ a{
 @media (max-width: 500px) {
   /* Растягиваем body и footer на всю высоту */
   body {
+    background-image: url(../assets/background/Background2222.png);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -360,6 +361,7 @@ a{
 @media (max-width: 368px) {
   /* Растягиваем body и footer на всю высоту */
   body {
+    background-image: url(../assets/background/Background2222.png);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
