@@ -206,6 +206,7 @@ body {
 }
 
 .social_logo{
+    text-align: center;
     margin: 10px 0px 20px;
 }
 
@@ -259,86 +260,147 @@ a{
 
 
 /* Мобильная адаптация (до 768px) */
+/* Мобильная версия (до 768px) */
 @media (max-width: 768px) {
-    /* Общие стили для body и контейнеров */
-    body {
-      padding: 0;
-      background-position: top center;
-    }
-  
-    /* Хедер для мобилок */
-    .header__top {
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-  
-    .header__subtitle {
-      font-size: 14px;
-      padding: 0 15px;
-    }
-  
-    /* Футер - растягиваем на всю ширину и делаем адаптивным */
-    .footer__container {
-      width: 100%;
-      padding: 30px 20px;
-      margin: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 0;
-    }
-  
-    /* Поисковая строка */
-    .search-container {
-      width: 100%;
-      max-width: 300px;
-    }
-  
-    .input-field {
-      width: 100%;
-      padding: 15px;
-      font-size: 16px;
-    }
-  
-    #search-button {
-      width: 100%;
-      margin-top: 15px;
-      height: 45px;
-      font-size: 16px;
-    }
-  
-    /* Результаты поиска */
-    .search-results {
-      max-width: 100%;
-      margin-top: 15px;
-    }
-  
-    /* Социальные иконки и лого */
-    .social__container {
-      margin-bottom: 15px;
-    }
-  
-    .social_logo svg {
-      width: 180px;
-      height: auto;
-    }
-  
-    /* Нижние ссылки */
-    .mui__container {
-      padding: 10px 0;
-    }
-  
-    .muicont1 {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-  
-    .offer__pol, 
-    .footer__link {
-      margin: 0;
-    }
-  
-    .offer__id__info {
-      margin-top: 10px;
-    }
+  /* Растягиваем body и footer на всю высоту */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
   }
-  
+
+  /* Основной контент (header) */
+  header {
+    flex-shrink: 0; /* Не сжимается */
+  }
+
+  /* Футер с растянутым фоном */
+  footer {
+    flex-grow: 1; /* Занимает всё оставшееся пространство */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .search-results {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
+  /* Контейнер внутри футера */
+  .footer__container {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    background: none;
+    flex-grow: 1; /* Растягивается на всю доступную высоту */
+  }
+
+  /* Секции social и mui внизу футера */
+  .social, .mui {
+    flex-shrink: 0; /* Не растягиваются */
+    width: 100%;
+    background: transparent; /* Убираем их собственный фон */
+  }
+}
+
+@media (max-width: 500px) {
+  /* Растягиваем body и footer на всю высоту */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Основной контент (header) */
+  header {
+    flex-shrink: 0; /* Не сжимается */
+  }
+
+  /* Футер с растянутым фоном */
+  footer {
+    flex-grow: 1; /* Занимает всё оставшееся пространство */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .search-results {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
+  /* Контейнер внутри футера */
+  .footer__container {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    background: none;
+    flex-grow: 1; /* Растягивается на всю доступную высоту */
+  }
+
+  /* Секции social и mui внизу футера */
+  .social, .mui {
+    flex-shrink: 0; /* Не растягиваются */
+    width: 100%;
+    background: transparent; /* Убираем их собственный фон */
+  }
+}
+
+@media (max-width: 368px) {
+  /* Растягиваем body и footer на всю высоту */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Основной контент (header) */
+  header {
+    flex-shrink: 0; /* Не сжимается */
+  }
+
+  /* Футер с растянутым фоном */
+  footer {
+    flex-grow: 1; /* Занимает всё оставшееся пространство */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .search-results {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
+  /* Контейнер внутри футера */
+  .footer__container {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    background: none;
+    flex-grow: 1; /* Растягивается на всю доступную высоту */
+  }
+
+  /* Секции social и mui внизу футера */
+  .social, .mui {
+    flex-shrink: 0; /* Не растягиваются */
+    width: 100%;
+    background: transparent; /* Убираем их собственный фон */
+  }
+}
