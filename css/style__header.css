@@ -265,12 +265,11 @@ a{
   /* Растягиваем body и footer на всю высоту */
   
   .input-field {
-    margin-right: 20px;
     padding: 20px 20px;
     border-radius: 4px;
     border: 1px solid #4D5167;
     background: rgba(52, 55, 76, 1);
-    min-width: 287px;
+    min-width: 237px;
     color: white; /* Добавьте цвет текста */
     font-weight: 500;
 
