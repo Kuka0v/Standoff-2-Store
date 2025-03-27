@@ -305,7 +305,7 @@ a{
     min-height: 100vh;
     text-align: center;
     display: flex;
-    justify-content: center;
+    padding: 0px;
     align-items: center;
   }
 
