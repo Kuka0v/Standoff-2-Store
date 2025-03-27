@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Eurostile Med';
+    src: url('../fonts/Eurostile-Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Оптимизация загрузки */
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url('../fonts/eurostile-bold-extended.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Оптимизация загрузки */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Eurostile Med', sans-serif;
+    background-color: antiquewhite;
+    background-image: url('../assets/background/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*     header     */
+.header__top{
+    margin-top: 28px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.header__logo{
+    margin-bottom: 8px;
+}
+
+.header__title{
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-transform: uppercase; /* Added to match screenshot style */
+}
+
+.header__subtitle{
+    max-width: 380px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin: auto;
+    line-height: 1.5; /* Added for better spacing between lines */
+}
+
+.footer__container{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 960px;
+    max-height: 288px;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 300px 40px 300px;
+    margin: 0 auto; /* Added to center the container */
+}
+
+.footer__title{
+    margin: auto;
+    max-width: 260px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase; /* Added to match screenshot style */
+}
+
+.footer__subtitle{
+    font-size: 12px;
+    color: #ADADAD;
+    font-weight: 400; /* Added spacing between title and subtitle */
+}
+
+.footer__text{
+    margin-bottom: 32px;
+}
+
+/* Added new styles for search box to match screenshot */
+.search-box {
+    display: flex;
+    flex-direction: column; /* Элементы будут вертикально */
+    align-items: center;
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.input-field {
+    padding: 20px 20px;
+    border-radius: 4px;
+    border: 1px solid #4D5167;
+    background: rgba(52, 55, 76, 1);
+    min-width: 287px;
+    color: white; /* Добавьте цвет текста */
+    font-weight: 500;
+
+}
+
+#search-button {
+    margin-top: 20px;
+    width: 170px;
+    height: 40px;
+    background: #839ACA;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 19px;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+  
+#search-button:not(:disabled) {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.search-results {
+    width: 100%;
+    max-width: 302px;
+    margin-top: 20px;
+    background-color: rgba(34, 39, 45, 0.8);
+    padding: 20px;
+    color: white;
+    display: none;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between; /* Add this to push arrow to the right */
+  }
+  
+  .profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .profile-id {
+    color: #ADADAD;
+    font-size: 14px;
+  }
+  
+  .profile-name {
+    font-weight: 400;
+    align-items: left;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .profile-arrow {
+    margin-left: auto; /* Pushes the arrow to the right */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-arrow svg {
+    transition: transform 0.2s ease;
+  }
+  
+  .profile-arrow:hover svg {
+    transform: translateX(2px);
+  }
+  
+  .profile-arrow:active svg {
+    transform: translateX(4px);
+  }
+
+
+/*     SOCIALS     */
+
+.social__container{
+    margin: 0px 0px 24px;
+}
+
+.social_logo{
+    margin: 10px 0px 20px;
+}
+
+.social__icons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+/*        mui        */
+.mui__container{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.219);
+    font-family: EurostileMed, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    margin-right: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.offer__id__info{
+    color: rgba(255, 255, 255, 0.181);
+    font-size: 8px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.social__icons svg path {
+    fill-opacity: 0.3;
+}
+
+.social__icons svg:hover path {
+    fill-opacity: 1;
+    transition: 0.5s;
+}
+
+.social_logo svg path {
+    fill-opacity: 0.3;
+}
+
+.social_logo svg:hover path {
+    fill-opacity: 1;
+    transition: 0.5s;
+}
+
+
+/* Мобильная адаптация (до 768px) */
+@media (max-width: 768px) {
+    /* Общие стили для body и контейнеров */
+    body {
+      padding: 0;
+      background-position: top center;
+    }
+  
+    /* Хедер для мобилок */
+    .header__top {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .header__subtitle {
+      font-size: 14px;
+      padding: 0 15px;
+    }
+  
+    /* Футер - растягиваем на всю ширину и делаем адаптивным */
+    .footer__container {
+      width: 100%;
+      padding: 30px 20px;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 0;
+    }
+  
+    /* Поисковая строка */
+    .search-container {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .input-field {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    #search-button {
+      width: 100%;
+      margin-top: 15px;
+      height: 45px;
+      font-size: 16px;
+    }
+  
+    /* Результаты поиска */
+    .search-results {
+      max-width: 100%;
+      margin-top: 15px;
+    }
+  
+    /* Социальные иконки и лого */
+    .social__container {
+      margin-bottom: 15px;
+    }
+  
+    .social_logo svg {
+      width: 180px;
+      height: auto;
+    }
+  
+    /* Нижние ссылки */
+    .mui__container {
+      padding: 10px 0;
+    }
+  
+    .muicont1 {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .offer__pol, 
+    .footer__link {
+      margin: 0;
+    }
+  
+    .offer__id__info {
+      margin-top: 10px;
+    }
+  }
+  
