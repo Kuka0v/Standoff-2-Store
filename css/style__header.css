@@ -1,18 +1,11 @@
 @font-face {
-    font-family: 'Eurostile Med';
-    src: url('../fonts/Eurostile-Med.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* Оптимизация загрузки */
+  font-family: 'Eurostile Med';
+  src: url('../fonts/EurostileMed-normal-400-100.ttf') format('truetype'); /* исправлено */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-    font-family: 'Eurostile';
-    src: url('../fonts/eurostile-bold-extended.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* Оптимизация загрузки */
-}
 
 body {
     margin: 0;
@@ -45,7 +38,7 @@ body {
 
 .header__title{
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 100;
     color: #FFFFFF;
     margin-bottom: 16px;
     text-transform: uppercase; /* Added to match screenshot style */
@@ -225,7 +218,6 @@ body {
 a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.219);
-    font-family: EurostileMed, sans-serif;
     font-size: 13px;
     font-weight: 200;
     margin-right: 8px;
